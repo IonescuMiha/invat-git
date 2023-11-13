@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular inregistrare</title>
+</head>
+
+<body>
+    
+    <h1>General information</h1>
+    <br>
+    <br>
+    <label for="title"> Titlu</label>
+    <input type="text"name="title" id="title"/><br><br>
+    <form action="form.html">
+        <label for="first_name"> First Name</label>
+        <input type="text" name="first_name" id="first_name" />
+        <label for="last_name"> Last Name</label>
+        <input type="text" name="last_name" id="last_name" />
+        <br><br>
+        Position
+        <select name="Position">
+            <option value="director general">Director General</option>
+            <option value="director adjunct">Director Adjunct</option>
+            <option value="specialist HR">Specialist HR</option>
+            <option value="contabil">Contabil</option>
+        </select>
+        <br><br>
+        <label for="company"> Company</label>
+        <input type="text" name="company" id="company" />
+        <br>
+        <br>
+        Business Arena Employees
+        <select name="Emplyees">
+            <option value="10-20">10-20</option>
+            <option value="21-30">21-30</option>
+            <option value="31-50">31-50</option>
+        </select>
+    </form>
+    <br><br>
+    <form action="form.htm">
+        <h1>Contact Details</h1>
+        <label for="street"> Street</label>
+        <input type="text" name="street" id="street" />
+        <label for="nr"> Nr</label>
+        <input type="text" name="nr" id="nr" /><br><br>
+        Additional information <textarea name="info" row="1" cols="20"></textarea>
+        <br><br>
+        <label for="number">Zip code</label>
+        <input type="zip" id="zip" name="zip" pattern="[0-6]{6}" required><br><br>
+        Place
+        <select name="place">
+            <option value="iasi">Iasi</option>
+            <option value="miroslava">Miroslava</option>
+            <option value="rediu">Rediu</option>
+            <option value="valea lulupui">Valea Lupului</option>
+        </select><br><br>
+        Country
+        <select name="country">
+            <option value="romania">Romania</option>
+            <option value="italia">Italia</option>
+            <option value="belgia">Belgia</option>
+            <option value="canada">Canada</option>
+        </select><br><br>
+        <label for="code"> Code+</label>
+        <input type="text" name="code" id="code" />
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" placeholder="enter your phone number" pattern="[0-9]{9}" required><br><br>
+        Your email
+        <input type="email" name="email" />
+        <br><br>
+        <input type="checkbox" name="termeni_si_conditii" id="termeni_si_conditii" />
+        <label for="termeni_si_conditii">I do accept<a href="https://publicitate.olx.ro/Termeni-si-conditii/"
+                target="_blank"> terms and condition </a> your site</label><br><br>
+        <button>Register Badge</button>
+    </form>
+
+</body>
+
+</html>
